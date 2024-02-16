@@ -1,31 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Get all the div elements with the class 'sections'
     var sectionDivs = document.querySelectorAll('.sections div');
     var displayDiv = document.querySelector(".display");
     var currentCategoryIndex = -1;
 
-    // Add click event listener to each div
     sectionDivs.forEach(function (div, index) {
-        // Store original color in dataset when the page loads
         div.dataset.originalColor = window.getComputedStyle(div).backgroundColor;
 
         div.addEventListener('click', function () {
-            // Remove 'selected' class from all divs
-            sectionDivs.forEach(function (otherDiv) {
+                sectionDivs.forEach(function (otherDiv) {
                 otherDiv.classList.remove('selected');
-                // Retrieve original color from dataset
                 otherDiv.style.backgroundColor = otherDiv.dataset.originalColor;
             });
 
-            // Add 'selected' class to the clicked div and change its background color
             div.classList.add('selected');
             div.style.backgroundColor = 'black';
 
             // Check if a different category is clicked
             if (index !== currentCategoryIndex) {
-                // Clear the content of the displayDiv
                 displayDiv.innerHTML = "";
-                // Load category based on the index of the clicked div
                 loadCategory(index);
                 currentCategoryIndex = index;
             }
