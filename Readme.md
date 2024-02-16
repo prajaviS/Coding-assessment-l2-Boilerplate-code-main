@@ -1,9 +1,6 @@
 
 # Shopping badge
 
-## Overview
-
-Brief description or introduction about your project.
 
 ## Features
 
