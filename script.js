@@ -71,25 +71,3 @@ response.then((v) => {
 
 }
 
-
-/*for(item in categories){
-        console.log(categories[item])
-        document.querySelector(".display").innerHTML+=`
-        <div class="card1">
-        <div class="imgsec">
-            <div class="tab">Wedding Special ${categories[item].category_name}</div>
-        </div>
-        <div class="bottompart">
-            <div class="header">
-                <p class="prodname">Mens Kurta</p>
-                <div class="dot"></div>
-                <p class="brand">Manayavar</p>
-            </div>
-            <div class="pricetag">
-                <p class="sellingprice">1000</p>
-                <p class="actualprice">1299</p>
-                <p class="discountprice">50% Off</p>
-            </div>
-            <div class="button"><p class="cart">Add to Cart</p></div>
-        </div>
-    </div>`; */
