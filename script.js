@@ -38,7 +38,7 @@ response.then((v) => {
     let displayDiv=document.querySelector(".display");
     let category=categories[categoryindex];
         let categoryName = category.category_name;
-        console.log(categoryName);
+        //console.log(categoryName);
         
         if (category.category_products && Array.isArray(category.category_products)) {
             for (let product of category.category_products) {

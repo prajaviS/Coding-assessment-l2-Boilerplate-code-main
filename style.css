@@ -148,314 +148,155 @@ svg{
 .prodname{
   font-size: 14px;
 }
-@media only screen and (max-width: 767px) {
-  :root {
-    --main-color:  rgba(242, 242, 242, 1); 
-    --upd-color: rgb(17, 17, 17);
+/* Small Screen (up to 400px) */
+@media only screen and (max-width: 0px) {
+  .container {
+    margin-top: 40px; 
+    margin-left: 5px; 
   }
-  
-  *{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    font-family: "Inter", sans-serif;
+
+  .title {
+    font-size: 24px;  
+    margin-left: 10px; }
+
+  .sections {
+    justify-content: center; 
+    margin-left: 5px;          }
+
+  .title {
+    margin-left: 10px; 
   }
-  body {
-    display: flex;
+
+  .sections {
+    margin-left: 5px; 
   }
-  .container{
-    margin-top: 20px;
-    margin-left: 0;
-    margin-right:5px;
-    width: 600px;
+
+  .selected,
+  .men,
+  .women,
+  .kids {
+    width: 100%; 
+    margin-bottom: 10px;
   }
-  .title{
-    font-size: 35px;
-    margin-left: 130px;
+
+  .title {
+    margin-left: 10px; 
   }
-  .sections{
-    width: 700px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 100px;
+
+  .sectxt {
+    font-size: 14px; 
+    margin-top: 10px;  
+    margin-left: 5px; }
+
+  .display {
+    margin-top: 15px; 
+    margin-left: 5px; 
+    }
+
+  .card1 {
+    width: 100%;        
+    margin-bottom: 15px; 
+   }
+
+  .header,
+  .pricetag {
+    margin-left: 5px; 
   }
-  .selected{
-    background-color: var(--upd-color);
-    color: white;
+
+  .dot {
+    margin-top: 5px; 
   }
-  .men{
-    display: flex;
-    width: 230px;
-    height: 50px;
-    background-color:var(--main-color);
-    border-radius: 5px;
-    cursor: pointer;
+
+  .pricetag {
+    margin-left: 5px; 
   }
-  .women{
-    display: flex;
-    width: 230px;
-    height: 50px;
-    background-color:var(--main-color);
-    border-radius: 5px;
-    cursor: pointer;
+
+  .actualprice {
+    font-size: 10px; 
   }
-  .kids{
-    display: flex;
-    width: 230px;
-    height: 50px;
-    background-color: var(--main-color);
-    border-radius: 5px;
-    cursor: pointer;
+
+  .discountprice {
+    font-size: 12px; 
   }
-  svg{
-    margin-top: 15px;
-    margin-left: 50px;
+
+  .button {
+    margin-top: 7px; 
   }
-  .sectxt{
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 17px;
-    margin-left: 10px;
-  }
-  .display{
-    display: flex;
-    margin-top: 60px;
-    margin-left: 0;
-    width: 80%;
-    height: 400px;
-  }
-  .card1{
-    height: 300px;
-    width: 200px;
-    background-color: white;
-    margin-right: 20px;
-    border-radius: 10px;
-  }
-  .imgsec{
-    border-radius: 10px;
-    position: relative;
-    background-size: cover;
-    width: 100%;
-    height: 60%;
-    display: block;
-  }
-  .imgsec img {
-    width: 100%;
-    height: 100%; /* Make the image width 100% of the parent (.imgsec) */
-    display: block; /* Remove extra spacing below the image */
-  }
-  .header{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin-left: 13px;
-  }
-  .dot{
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    border-radius: 50%;
-    margin-top: 15px;
-  }
-  .pricetag{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin-left: 15px;
-  }
-  .actualprice{
-    text-decoration: line-through;
-    color: rgba(143, 143, 143, 1);
-  }
-  .discountprice{
-    color:  rgba(255, 55, 55, 1);
-  }
-  .button{
-    width: 99%;
-    height: 45px;
-    border-radius: 10px;
-    background-color: black;
-    margin-top: 11px;
-    margin-left: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    cursor: pointer;
-  }
-  .button:hover{
-    background-color: rgb(20, 19, 19);
-    height: 49px;
-  }
-  .tab{
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 1); /* Adjust the background color and opacity as needed */
-    padding: 10px; /* Adjust the padding as needed */
-    border-radius: 5px; /* Optional: Add border-radius for a rounded button appearance */
-    cursor: pointer;
-  }
-  .prodname{
-    font-size: 14px;
+
+  .prodname {
+    font-size: 10px; 
   }
 }
-
-
+/* Tablet Screen (768px to 1024px) */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  :root {
-    --main-color:  rgba(242, 242, 242, 1); 
-    --upd-color: rgb(17, 17, 17);
+  .container {
+    margin-top: 50px;
+    margin-left: 20px;
   }
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    font-family: "Inter", sans-serif;
-  }
-  body {
-    display: flex;
-  }
-  .container{
-    margin-top: 70px;
-    margin-left: 100px;
-  }
-  .title{
-    font-size: 35px;
-    margin-left: 280px;
-    margin-left: 480px;
-  }
-  .sections{
-    width: 850px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 270px;
-  }
-  .selected{
-    background-color: var(--upd-color);
-    color: white;
-  }
-  .men{
-    display: flex;
-    width: 280px;
-    height: 50px;
-    background-color:var(--main-color);
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .women{
-    display: flex;
-    width: 280px;
-    height: 50px;
-    background-color:var(--main-color);
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .kids{
-    display: flex;
-    width: 280px;
-    height: 50px;
-    background-color: var(--main-color);
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  svg{
-    margin-top: 15px;
-    margin-left: 100px;
-  }
-  .sectxt{
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 17px;
-    margin-left: 10px;
-  }
-  .display{
-    display: flex;
-    margin-top: 60px;
+
+  .title {
+    font-size: 28px;
     margin-left: 30px;
   }
-  .card1{
-    height: 400px;
-    width: 300px;
-    background-color: white;
-    margin-right: 20px;
-    border-radius: 10px;
+
+  .sections {
+    justify-content: space-around;
+    margin-left: 20px;
   }
-  .imgsec{
-    border-radius: 10px;
-    position: relative;
-    background-size: cover;
-    width: 100%;
-    height: 60%;
-    display: block;
-    
+
+  .selected,
+  .men,
+  .women,
+  .kids {
+    width: 200px;
+    margin-bottom: 15px;
   }
-  .imgsec img {
-    width: 100%;
-    height: 100%; /* Make the image width 100% of the parent (.imgsec) */
-    display: block; /* Remove extra spacing below the image */
+
+  .sectxt {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 10px;
   }
-  .header{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin-left: 18px;
+
+  .display {
+    margin-top: 30px;
+    margin-left: 10px;
   }
-  .dot{
-    width: 10px;
-    height: 10px;
-    background-color: black;
-    border-radius: 50%;
-    margin-top: 19px;
+
+  .card1 {
+    width: 200px;
+    margin-bottom: 20px;
   }
-  .pricetag{
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    margin-left: 15px;
+
+  .header,
+  .pricetag {
+    margin-left: 10px;
   }
-  .actualprice{
-    text-decoration: line-through;
-    color: rgba(143, 143, 143, 1);
+
+  .dot {
+    margin-top: 10px;
   }
-  .discountprice{
-    color:  rgba(255, 55, 55, 1);
+
+  .pricetag {
+    margin-left: 10px;
   }
-  .button{
-    width: 99%;
-    height: 45px;
-    border-radius: 10px;
-    background-color: black;
-    margin-top: 11px;
-    margin-left: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    cursor: pointer;
-  }
-  .button:hover{
-    background-color: rgb(20, 19, 19);
-    height: 49px;
-  }
-  .tab{
-    position: absolute;
-    top: 10%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 1); /* Adjust the background color and opacity as needed */
-    padding: 10px; /* Adjust the padding as needed */
-    border-radius: 5px; /* Optional: Add border-radius for a rounded button appearance */
-    cursor: pointer;
-  }
-  .prodname{
+
+  .actualprice {
     font-size: 14px;
   }
-}
 
-/* Desktop Screen */
+  .discountprice {
+    font-size: 16px;
+  }
+
+  .button {
+    margin-top: 15px;
+  }
+
+  .prodname {
+    font-size: 16px;
+  }
+}
 @media only screen and (min-width: 1025px) {
   /* Your styles for desktops go here */
 }
